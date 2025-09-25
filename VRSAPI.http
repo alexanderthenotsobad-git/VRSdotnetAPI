@@ -1,0 +1,6 @@
+@VRSAPI_HostAddress = http://localhost:5070
+
+GET {{VRSAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

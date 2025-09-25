@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "vACNptkNXuOJzW4oXtgwKFCkfflIlkQ5P7RHfS3osm8=",
+  "Source": "VRSAPI",
+  "BasePath": "_content/VRSAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
