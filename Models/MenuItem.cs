@@ -2,9 +2,9 @@ using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace VRSAPI.ModelsP
+namespace VRSAPI.Models
 {
-    [Table(menu_items)]
+    [Table("menu_items")]
     public class MenuItem
     {
         [Key]
@@ -16,6 +16,17 @@ namespace VRSAPI.ModelsP
         [MaxLength(45)]
         public string ItemName { get; set; } = string.Empty;
 
+        [Column("item_description")]
+        public string? ItemDescription { get; set; }
+
+        [Required]
+        [Column("price")]
+        [Range(0.01, 999.99)]
+        public decimal Price { get; set; }
+
+        [Column("item_type")]
+        [MaxLength(45)]
+        public string? ItemType { get; set; }
     }
 
 }
