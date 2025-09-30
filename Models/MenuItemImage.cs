@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace VRSAPI.Models
 {
     [Table("menu_item_images")]
-    public class MenuItemImage
+    public virtual ICollection<MenuItemImage> Images { get; set; }
     {
         [Key]
         [Column("image_id")]
