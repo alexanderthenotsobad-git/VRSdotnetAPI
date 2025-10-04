@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VRSAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+619d9d059a2c1d11c4f18979e3d28053d717e84b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ddbc7380d76811e72679f1d01a8cf53849f5ace2")]
 [assembly: System.Reflection.AssemblyProductAttribute("VRSAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VRSAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
