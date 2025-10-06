@@ -16,8 +16,8 @@ namespace VRSAPI.Models
         [MaxLength(45)]
         public string ItemName { get; set; } = string.Empty;
 
-        [Column("item_description")]
-        public string? ItemDescription { get; set; }
+        [Column("item_desc")]
+        public string? ItemDesc { get; set; }
 
         [Required]
         [Column("price")]
@@ -27,6 +27,8 @@ namespace VRSAPI.Models
         [Column("item_type")]
         [MaxLength(45)]
         public string? ItemType { get; set; }
+
+        public virtual ICollection<MenuItemImage> Images { get; set; } = new List<MenuItemImage>();
     }
 
 }
