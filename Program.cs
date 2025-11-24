@@ -13,6 +13,28 @@ builder.Services.AddDbContext<VRSDbContext>(options =>
     options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
 });
 
+// Configure Swagger
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen(options =>
+{
+    options.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo
+    {
+        Title = "NVRS Menu API",
+        Version = "1.0.0",
+        Description = "API documentation for Node Virtual Restaurant Solutions",
+        Contact = new Microsoft.OpenApi.Models.OpenApiContact
+        {
+            Name = "Alexander Gomez"
+        }
+    });
+
+    options.AddServer(new Microsoft.OpenApi.Models.OpenApiServer
+    {
+        Url = "http://localhost:3002",
+        Description = "Development server"
+    });
+});
+
 // Configure CORS for Next.js frontend and Cloudflare
 builder.Services.AddCors(options =>
 {
